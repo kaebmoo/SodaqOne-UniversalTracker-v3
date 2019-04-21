@@ -579,7 +579,7 @@ bool Sodaq_RN2483::setFsbChannels(uint8_t fsb)
 
     bool allOk = true;
 
-    for (uint8_t i = 0; i < 72; i++) {
+    for (uint8_t i = 0; i < 2; i++) {  // 72
         print(STR_CMD_SET_CHANNEL_STATUS);
         print(i);
         print(" ");
